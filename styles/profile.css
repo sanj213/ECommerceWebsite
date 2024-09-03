@@ -1,0 +1,77 @@
+.profile_page .avatar {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    margin: 15px auto;
+    border: 2px solid #ddd; /* Slightly thicker border for better definition */
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.profile_page .avatar:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.profile_page .avatar img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%; /* Ensures image follows container's rounded shape */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+.profile_page .avatar:hover img {
+    transform: scale(1.1); /* Slight zoom for image on hover */
+}
+
+.profile_page .avatar span {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.8); /* Slightly more opaque background for better visibility */
+    text-align: center;
+    font-weight: 500; /* Slightly bolder text */
+    color: rgb(255, 140, 45);
+    transition: bottom 0.3s ease-in-out; /* Added missing timing property for smoother transition */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile_page .avatar:hover span {
+    bottom: 0; /* Ensures the span is fully visible on hover */
+}
+
+.profile_page #file_up {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2; /* Ensures the upload button is clickable */
+}
+
+::-webkit-file-upload-button {
+    cursor: pointer;
+}
+
+/* --------- Responsive Design Enhancements ----------- */
+@media (max-width: 768px) {
+    .profile_page .avatar {
+        width: 120px; /* Adjusted size for smaller screens */
+        height: 120px;
+    }
+
+    .profile_page .avatar span {
+        height: 40%; /* Adjusted span height for smaller avatars */
+    }
+}
