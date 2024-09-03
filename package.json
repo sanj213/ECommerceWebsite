@@ -2,8 +2,9 @@
   "name": "nextjs-ecommerce",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider npx next dev",
     "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
     "start": "next start"
   },
@@ -19,8 +20,7 @@
   "engines": {
     "node": "20.x"
   
-  },
-  "homepage": "."
+  }
 
   
 }
