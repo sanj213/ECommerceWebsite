@@ -1,6 +1,6 @@
 module.exports = {
     env: {
-        "BASE_URL": "http://localhost:3000",
+        "BASE_URL": "https://urbanbasket.vercel.app",
         "MONGODB_URL": "mongodb+srv://sanj:sanju213@cluster0.kpjeomb.mongodb.net/ecommerceweb?retryWrites=true&w=majority",
         "ACCESS_TOKEN_SECRET": "sanj4020228718061949",
         "REFRESH_TOKEN_SECRET" : "sanj8488170792655717",
