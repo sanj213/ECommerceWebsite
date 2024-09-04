@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "NODE_OPTIONS=--openssl-legacy-provider npx next dev",
     "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
-    "start": "next start"
+    "start": "NODE_OPTIONS=--openssl-legacy-provider next start"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
