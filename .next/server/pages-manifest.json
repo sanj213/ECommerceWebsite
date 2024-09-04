@@ -1,5 +1,15 @@
 {
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/_error": "pages/_error.js"
+  "/_error": "pages/_error.js",
+  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
+  "/signin": "pages/signin.js",
+  "/": "pages/index.js",
+  "/api/auth/login": "pages/api/auth/login.js",
+  "/api/order": "pages/api/order.js",
+  "/cart": "pages/cart.js",
+  "/api/product": "pages/api/product.js",
+  "/api/product/[id]": "pages/api/product/[id].js",
+  "/api/categories": "pages/api/categories.js",
+  "/order/[id]": "pages/order/[id].js"
 }
